@@ -53,23 +53,46 @@
 
 
 						
-<section data-markdown>
-    <script type="text/template">
-    ### Hello Dart程式
-<p><iframe width="800" height="600" src="https://dartpad.dev/embed-inline.html?id=f08cfe0f1f6204079acffb01c74e927d"></iframe></p>
 
-    </script>
-</section>
-
-
-						
 <section>
 <section data-markdown>
-    <script type="text/javascript">
+
+    <script type="text/template">
+   ### 剛開始接觸這個課程時處處碰壁
+   
+   ### 像使用github建立倉儲、架設網站等
+   
+   ### 後來寫了第一個dart程式
+   
+   ### Hello 程式
+
+    </script>
+</section>
+
+
+						
+
+<section data-markdown>
+
+
+
+    <script type="text/template">
     
-<p><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="fr">Draw FR</button> <button id="roc">Draw ROC</button> <button id="jp">Draw JP</button> <button id="ru">Draw RU</button> <button id="ne">Draw NE</button> <button id="ge">Draw GE</button> <button id="uk">Draw UK</button></p>
-<script src="lib/flag/flag.js"></script>
-    
+ ### Hello Dart程式
+<p><iframe width="800" height="600" src="https://dartpad.dev/embed-inline.html?id=f08cfe0f1f6204079acffb01c74e927d"></iframe></p>
+
+
+     </script>
+</section>
+</section>
+
+
+
+<section>						
+<section data-markdown>
+    <script type="text/template">
+
+ ### 接著又再進一步寫了for迴圈程式   </script>
 </section>
 
 
@@ -77,34 +100,19 @@
 						
 <section data-markdown>
     <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+ ### For迴圈
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=78689db993db645c650fd0e7242f02f6" width="800"></iframe></p>
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-    </script>
+</script>
+</section>
+
+
+    </section>
+    <section>						
+<section data-markdown>
+    <script type="text/template">
+
+  ### 修改模擬程式並丟入excel繪製圖形  </script>
 </section>
 
 
@@ -112,19 +120,75 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+ ### 模擬
+  <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=4c496a874bcebc1fdbb0584f1e25aa61" width="800"></iframe></p>
+ 
+</script>
+</section>
 
-### 導入影片 template
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </script>
+    </section>
+    <section>						
+<section data-markdown>
+    <script type="text/template">
+
+ ### 帶入公式做簡易的溫度以及重量轉換的運算   </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+ 
+ ### 溫度轉換
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=898ac0de562a1a8bb03ce78aaa0dcf2a" width="800"></iframe></p>
+   
+</script>
 </section>
 
 
 						
+<section data-markdown>
+    <script type="text/template">
+ ### 重量轉換
+  <iframe width="800" height="600" src="https://dartpad.github.io/embed-html.html?gh_owner=40823137&gh_repo=cp2019&gh_path=downloads/dart_ex/weight" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </script>
+</section>
+    </section>
+    
+        <section>						
+<section data-markdown>
+    <script type="text/template">
+
+ ### 用html的型式繪製國旗和按鈕並轉成javascript嵌入網站  
+ </script>
 </section>
 
-</div>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+ ### 國旗繪製 
+  <iframe width="800" height="600" src="https://dartpad.github.io/embed-html.html?gh_owner=40823137&gh_repo=cp2019&gh_path=downloads/dart_ex/flag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </script>
+</section>
+
+
+      </section>
+    <section data-markdown>
+    <script type="text/template">
+ ### 這堂課只要認真學
+ ### 就能有許多收穫
+ ### 對未來也能有非常多的幫助
+ </script>
+</section>
+
+
+    </section>
+
+</div> 
 
 </div>
 
@@ -138,7 +202,7 @@ make.start()
             history: true,
             center: true,
 
-            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            transition: 'concave', // none/fade/slide/convex/concave/zoom
 
             // More info https://github.com/hakimel/reveal.js#dependencies
             dependencies: [
